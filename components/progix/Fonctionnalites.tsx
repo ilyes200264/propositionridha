@@ -501,7 +501,7 @@ export function Fonctionnalites() {
             >
                 <div className="inline-block text-white rounded-2xl px-12 py-8 max-w-4xl" style={{ backgroundColor: '#1d4760' }}>
                     <h4 className="text-2xl font-bold mb-4">Valeur stratégique globale</h4>
-                    <p className="mb-4">Cette application n'est pas un simple programme de points, mais un véritable outil de croissance, permettant :</p>
+
                     <div className="grid md:grid-cols-2 gap-4 text-left">
                         <ul className="space-y-2">
                             <li>• +20 à +40 % de fréquence de visite</li>
