@@ -562,33 +562,47 @@ export function Fonctionnalites() {
             <Modal
                 isOpen={selectedFeature === "architecture"}
                 onClose={() => setSelectedFeature(null)}
-                title="Architecture Technique (simplifiée)"
+                title="Architecture Technique"
             >
                 <div className="space-y-4">
-                    <ul className="space-y-3">
+                    <p className="text-muted italic mb-4">
+                        Une infrastructure robuste, conçue pour la performance, la sécurité et la montée en charge.
+                    </p>
+                    <ul className="space-y-4">
                         <li className="flex items-start gap-3">
-                            <span className="font-bold" style={{ color: '#1d4760' }}>•</span>
-                            <span className="text-muted"><strong>Application mobile :</strong> React Native / Flutter</span>
+                            <span className="font-bold mt-1" style={{ color: '#1d4760' }}>•</span>
+                            <div className="flex flex-col">
+                                <span className="font-bold text-slate-900 dark:text-slate-100">Application Mobile (Hybride Premium)</span>
+                                <span className="text-muted text-sm">Framework : <strong>React Native</strong> ou <strong>Flutter</strong>. Permet une expérience fluide sur iOS et Android avec une seule base de code performante.</span>
+                            </div>
                         </li>
                         <li className="flex items-start gap-3">
-                            <span className="text-purple-600 font-bold">•</span>
-                            <span className="text-muted"><strong>Backend sécurisé :</strong> (API)</span>
+                            <span className="font-bold mt-1" style={{ color: '#1d4760' }}>•</span>
+                            <div className="flex flex-col">
+                                <span className="font-bold text-slate-900 dark:text-slate-100">Backend API (Serveur)</span>
+                                <span className="text-muted text-sm">Technologie : <strong>Node.js</strong> avec <strong>NestJS</strong>. Une architecture modulaire et scalable capable de gérer des milliers de requêtes simultanées.</span>
+                            </div>
                         </li>
                         <li className="flex items-start gap-3">
-                            <span className="text-purple-600 font-bold">•</span>
-                            <span className="text-muted"><strong>Base de données :</strong> utilisateurs & transactions</span>
+                            <span className="font-bold mt-1" style={{ color: '#1d4760' }}>•</span>
+                            <div className="flex flex-col">
+                                <span className="font-bold text-slate-900 dark:text-slate-100">Base de Données</span>
+                                <span className="text-muted text-sm">Système : <strong>PostgreSQL</strong>. Robuste et sécurisée pour gérer les utilisateurs, les transactions et l'historique de fidélité.</span>
+                            </div>
                         </li>
                         <li className="flex items-start gap-3">
-                            <span className="text-purple-600 font-bold">•</span>
-                            <span className="text-muted"><strong>Système de notifications push</strong></span>
+                            <span className="font-bold mt-1" style={{ color: '#1d4760' }}>•</span>
+                            <div className="flex flex-col">
+                                <span className="font-bold text-slate-900 dark:text-slate-100">Infrastructure & Hébergement</span>
+                                <span className="text-muted text-sm">Cloud : <strong>AWS</strong> ou <strong>Google Cloud Platform</strong>. Assure une disponibilité de 99.9% et une sécurité des données maximale (chiffrement SSL/TLS).</span>
+                            </div>
                         </li>
                         <li className="flex items-start gap-3">
-                            <span className="text-purple-600 font-bold">•</span>
-                            <span className="text-muted"><strong>Hébergement cloud sécurisé</strong></span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                            <span className="text-purple-600 font-bold">•</span>
-                            <span className="text-muted"><strong>Architecture évolutive :</strong> (ajout de nouvelles fonctionnalités)</span>
+                            <span className="font-bold mt-1" style={{ color: '#1d4760' }}>•</span>
+                            <div className="flex flex-col">
+                                <span className="font-bold text-slate-900 dark:text-slate-100">Système de Notifications</span>
+                                <span className="text-muted text-sm">Service : <strong>Firebase Cloud Messaging (FCM)</strong>. Pour l'envoi instantané et ciblé de notifications push.</span>
+                            </div>
                         </li>
                     </ul>
                 </div>
